@@ -8,6 +8,13 @@ var app = require('../app');
 var debug = require('debug')('backendcometazines:server');
 var http = require('http');
 
+// Configuración de .env
+require('dotenv').config();
+
+// Configuración de la BD
+require('../config/db');
+
+
 /**
  * Get port from environment and store in Express.
  */
