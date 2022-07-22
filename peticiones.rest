@@ -1,0 +1,71 @@
+GET http://localhost:3000/api/users/all
+authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBEYXRlIjoxNjU4ODQyMDA4LCJpYXQiOjE2NTg0MTAwMDh9.gJ5Mzo940L2VNfMeadWcU1w0VHx1e6xWRrexoOTceKg"
+
+###
+
+GET http://localhost:3000/api/users/6
+Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBEYXRlIjoxNjU4ODQwNzUxLCJpYXQiOjE2NTg0MDg3NTF9.IGQgoLZ_XpWfypZg6seOLsFh-cwPR_BSawP87EDlN9I"
+
+###
+
+GET http://localhost:3000/api/users/email/lolosg@gmail.com
+
+###
+GET http://localhost:3000/api/users/user/lolosoloyolo
+
+###
+
+
+//---------------POST-----------------//
+
+//register
+
+POST http://localhost:3000/api/new/register
+Content-Type: application/json
+
+{  
+    "name": "Alberto",
+    "surname": "Sanchez",
+    "username": "nihablarpeluca",
+    "email": "sanchezalbert@gmail.com",
+    "password": "12345"
+}
+
+###
+
+// login
+
+POST http://localhost:3000/api/new/login
+Content-Type: application/json
+
+{
+    "email": "lolosg@gmail.com",
+    "password": "12345"
+}
+
+###
+
+//-------------UPDATE----------------//
+
+
+
+
+
+
+
+
+###
+
+//--------------DELETE---------------//
+
+DELETE http://localhost:3000/api/users/delete/8
+
+
+
+
+
+
+
+
+
+
