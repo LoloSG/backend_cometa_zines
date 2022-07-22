@@ -55,11 +55,12 @@ const getByUser = (username, email) => {
 
 //------------------------------
 
-const updateProfile = ({ bio, profile_picture, subtitle, id_user }) => {
+const updateProfile = ({ profile_picture }, id_user) => {
+    console.log(profile_picture, id_user)
     return new Promise((resolve, reject) => {
         db.query(
-            'update users set bio = ?, profile_picture = ?, subtitle = ? where id_user = ?',
-            [bio, profile_picture, subtitle, id_user],
+            'update users set profile_picture = ? where id_user = ?',
+            [profile_picture, parseInt(id_user)],
             (err, result) => {
                 if (err) return reject(err);
                 resolve(result);
@@ -71,7 +72,7 @@ const updateHeader = ({ header_picture, id_user }) => {
     return new Promise((resolve, reject) => {
         db.query(
             'update users set header_picture = ? where id_user = ?',
-            [header_picture, iduser],
+            [header_picture, id_user],
             (err, result) => {
                 if (err) return reject(err);
                 resolve(result);

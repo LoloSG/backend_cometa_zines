@@ -9,7 +9,7 @@ function createToken(user) {
         userId: user.id,
         expDate: dayjs().add(5, 'days').unix()
     }
-    return jwt.sign(obj, 'en un lugar de la mancha');
+    return jwt.sign(obj, 'token');
 }
 
 

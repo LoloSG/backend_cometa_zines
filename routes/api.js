@@ -7,7 +7,7 @@ const usersApiRouter = require('./api/users')
 
 
 router.use('/new', newApiRouter);
-router.use('/users', usersApiRouter);
+router.use('/users', checkToken, usersApiRouter);
 
 
 module.exports = router;

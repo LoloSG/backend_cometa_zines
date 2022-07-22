@@ -1,10 +1,12 @@
+//-------- GET para USERS
+
 GET http://localhost:3000/api/users/all
-authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBEYXRlIjoxNjU4ODQyMDA4LCJpYXQiOjE2NTg0MTAwMDh9.gJ5Mzo940L2VNfMeadWcU1w0VHx1e6xWRrexoOTceKg"
+authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBEYXRlIjoxNjU4OTExNjMxLCJpYXQiOjE2NTg0Nzk2MzF9.EekNZVLXOoWqlywQGA8fgDi8w0ZCb_f2nNVeQlcypd8"
 
 ###
 
-GET http://localhost:3000/api/users/6
-Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBEYXRlIjoxNjU4ODQwNzUxLCJpYXQiOjE2NTg0MDg3NTF9.IGQgoLZ_XpWfypZg6seOLsFh-cwPR_BSawP87EDlN9I"
+GET http://localhost:3000/api/users/10
+authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBEYXRlIjoxNjU4OTEyMTk2LCJpYXQiOjE2NTg0ODAxOTZ9.a7GlmhU6E7eQQ2FQjlRFF7WMi3ka_i8-eyURovS51ho"
 
 ###
 
@@ -16,7 +18,7 @@ GET http://localhost:3000/api/users/user/lolosoloyolo
 ###
 
 
-//---------------POST-----------------//
+//---------------POST para USERS-----------------//
 
 //register
 
@@ -33,7 +35,7 @@ Content-Type: application/json
 
 ###
 
-// login
+// --------- login users (new) ---------//
 
 POST http://localhost:3000/api/new/login
 Content-Type: application/json
@@ -45,9 +47,9 @@ Content-Type: application/json
 
 ###
 
-//-------------UPDATE----------------//
+//-------------UPDATE para USERS----------------//
 
-
+// (en postman porque tengo que subir archivos)
 
 
 
@@ -56,7 +58,7 @@ Content-Type: application/json
 
 ###
 
-//--------------DELETE---------------//
+//--------------DELETE para USERS---------------//
 
 DELETE http://localhost:3000/api/users/delete/8
 

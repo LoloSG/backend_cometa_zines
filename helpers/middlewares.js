@@ -7,14 +7,15 @@ const checkToken = async (req, res, next) => {
     const token = req.headers['authorization'];
     let tokenUser;
 
+
     if (!req.headers['authorization']) {
         return res.json({ error: 'El token necesita un header.' });
     }
 
     try {
-        tokenUser = jwt.verify(token, process.env.API_TOKEN);
+        tokenUser = jwt.verify(token, 'token');
     } catch (err) {
-        return res.json({ error: 'El token es inválido' });
+        return res.json({ error: 'El token no es válido' });
     }
 
     if (dayjs().unix() > tokenUser.expDate) {
