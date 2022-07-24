@@ -92,17 +92,17 @@ router.put('/update/:id', uploadProfileImage.single('profile_picture'), async (r
 });
 
 //Update header
-router.put('/updateHeader/:id', uploadHeader.single('header_image'), async (req, res, next) => {
+router.put('/updateHeader/:id', uploadHeader.single('header_picture'), async (req, res, next) => {
     const extension = '.' + req.file.mimetype.split('/')[1];
     const newName = req.file.filename + extension;
     const newPath = req.file.path + extension;
     fs.renameSync(req.file.path, newPath);
     req.body.header_picture = newName
-    req.body.iduser = req.userId
+    req.body.id_user = req.userId
 
     try {
         console.log(req.body);
-        const result = await User.updateHeader(req.body);
+        const result = await User.updateHeader(req.body, req.params.id);
         res.json(result)
     }
     catch (error) {

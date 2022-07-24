@@ -1,12 +1,12 @@
 //-------- GET para USERS
 
 GET http://localhost:3000/api/users/all
-authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBEYXRlIjoxNjU4OTExNjMxLCJpYXQiOjE2NTg0Nzk2MzF9.EekNZVLXOoWqlywQGA8fgDi8w0ZCb_f2nNVeQlcypd8"
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBEYXRlIjoxNjU4OTEyNTU3LCJpYXQiOjE2NTg0ODA1NTd9.jPRHgd-TT6LwNUCUERqz8R5kPVzP2o71uCrKpVF2Mfg
 
 ###
 
 GET http://localhost:3000/api/users/10
-authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBEYXRlIjoxNjU4OTEyMTk2LCJpYXQiOjE2NTg0ODAxOTZ9.a7GlmhU6E7eQQ2FQjlRFF7WMi3ka_i8-eyURovS51ho"
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHBEYXRlIjoxNjU4OTEyNTU3LCJpYXQiOjE2NTg0ODA1NTd9.jPRHgd-TT6LwNUCUERqz8R5kPVzP2o71uCrKpVF2Mfg
 
 ###
 

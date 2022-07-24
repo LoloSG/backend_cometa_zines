@@ -68,11 +68,11 @@ const updateProfile = ({ profile_picture }, id_user) => {
     });
 }
 
-const updateHeader = ({ header_picture, id_user }) => {
+const updateHeader = ({ header_picture }, id_user) => {
     return new Promise((resolve, reject) => {
         db.query(
             'update users set header_picture = ? where id_user = ?',
-            [header_picture, id_user],
+            [header_picture, parseInt(id_user)],
             (err, result) => {
                 if (err) return reject(err);
                 resolve(result);
